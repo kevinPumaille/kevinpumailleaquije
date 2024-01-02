@@ -1,0 +1,53 @@
+.selected{
+    border-bottom: 1px solid rgb(197, 150, 150);
+    transition: 0.5s;
+}
+
+::ng-deep .p-toolbar {
+    
+    background-color: #451952;
+    color: #fff;
+    border: 0px;
+    border-radius: 0px;
+    position: fixed;
+    width: 100%;
+    top: 0; 
+    z-index: 1000;
+}
+
+@media screen and (min-width: 1024px) {
+    .mi-toolbar{
+        display: none;
+        
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+    .navBar{
+        display: none;
+    }
+
+    .principal{
+        padding-top: 82px;
+    }
+}
+
+.navBar{
+    background-color: #662549;
+}
+
+::ng-deep .p-sidebar {
+    
+    background-color: #451952;
+    
+}
+
+.nav-link-sidebar{
+    width: 100%;
+    text-decoration: none;
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+    
+}

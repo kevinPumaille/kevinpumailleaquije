@@ -1,0 +1,50 @@
+
+<div class="mi-toolbar">
+    <p-toolbar>
+        <div class="p-toolbar-group-start">
+            <p-button (click)="sidebarVisible = true" styleClass="p-button-text">
+                <i class="p-toolbar-separator pi pi-bars mr-2" style="vertical-align: middle"></i>
+            </p-button>
+        </div>
+    </p-toolbar>
+</div>
+
+<div class="flex lg:flex-row items-start text-letraPrincipal principal">
+    <div class="navBar md:w-full lg:w-1/6  sticky top-0 h-screen grid content-center mb-4 lg:mb-0">
+        <nav class=" m-9 space-y-10 ">
+    
+            <div class="flex items-center">
+                <img class="rounded-full mx-auto" src="../../../assets/foto.jpg" alt="Tu Foto">
+            </div>
+        
+            <ul class="menu text-center space-y-4 ">
+                <li><a href="#kevin" class="selected">KEVIN</a></li>
+                <li><a href="#sobreMi">SOBRE MI</a></li>
+                <li><a href="#portafolio">PORTAFOLIO</a></li>
+                <li><a href="#educacion">EDUCACIÓN</a></li>
+                <li><a href="#skills">SKILLS</a></li>
+                <li><a href="#contacto">CONTACTO</a></li>
+            </ul>
+        
+        </nav>
+    </div>
+    
+    <div class=" w-full lg:w-5/6 bg-fondoSection p-4 lg:p-10">
+        <app-main></app-main>
+    </div>
+</div>
+
+<p-sidebar [(visible)]="sidebarVisible">
+    <div class="flex flex-col items-center text-center">
+        <a href="#kevin" class="nav-link-sidebar" (click)="cerrarSidebar()">kevin</a>
+        <a href="#sobreMi" class="nav-link-sidebar" (click)="cerrarSidebar()">Sobre Mi</a>
+        <a href="#portafolio" class="nav-link-sidebar" (click)="cerrarSidebar()">Portafolio</a>
+        <a href="#educacion" class="nav-link-sidebar" (click)="cerrarSidebar()">Educación</a>
+        <a href="#skills" class="nav-link-sidebar" (click)="cerrarSidebar()">Skills</a>
+        <a href="#contacto" class="nav-link-sidebar" (click)="cerrarSidebar()">Contacto</a>
+    </div>
+</p-sidebar>
+
+
+
+
